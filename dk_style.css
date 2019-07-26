@@ -1,0 +1,43 @@
+body {
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+#drum_row {
+	text-align: center;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 400px 400px;
+}
+
+.drum_button {
+	width: 80px;
+	font-size: 80%;
+	color: #913f3c;
+	background-color: rgba(0, 0, 0, 0.65);
+	border: 4px #913f3c solid;
+	border-radius: 5px;
+	transition-duration: 0.2s;
+}
+
+p {
+	color: #FFF;
+}
+
+.playing {
+	transform: scale(1.1);
+	border: 4px #3c8691 solid;
+	box-shadow: 0 0 5px #3c8691;
+	color: #3c8691;
+}
+
+.drum_button:active {
+	transform: scale(1.1);
+	border: 4px #3c8691 solid;
+	box-shadow: 0 0 5px #3c8691;
+	color: #3c8691;
+}
