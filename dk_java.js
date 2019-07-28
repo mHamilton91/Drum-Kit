@@ -1,64 +1,65 @@
-document.addEventListener("keydown", function(event) {
-	switch(event.keyCode) {
+document.addEventListener("keydown", function(e) {
+	switch(e.keyCode) {
 		case 65:
 			let clap = document.getElementById("clap_audio");
-			playAudio(clap);
-			color("clap");
+			keyPlay(clap);
+			animation("clap");
 			break;
 		case 83:
 			let hihat = document.getElementById("hihat_audio");
-			playAudio(hihat);
-			color("hihat");
+			keyPlay(hihat);
+			animation("hihat");
 			break;
 		case 68:
 			let kick = document.getElementById("kick_audio");
-			playAudio(kick);
-			color("kick");
+			keyPlay(kick);
+			animation("kick");
 			break;
 		case 70:
 			let openhat = document.getElementById("openhat_audio");
-			playAudio(openhat);
-			color("openhat");
+			keyPlay(openhat);
+			animation("openhat");
 			break;
 		case 71:
 			let boom = document.getElementById("boom_audio");
-			playAudio(boom);
-			color("boom");
+			keyPlay(boom);
+			animation("boom");
 			break;
 		case 72:
 			let ride = document.getElementById("ride_audio");
-			playAudio(ride);
-			color("ride");
+			keyPlay(ride);
+			animation("ride");
 			break;
 		case 74:
 			let snare = document.getElementById("snare_audio");
-			playAudio(snare);
-			color("snare");
+			keyPlay(snare);
+			animation("snare");
 			break;
 		case 75:
 			let tom = document.getElementById("tom_audio");
-			playAudio(tom);
-			color("tom");
+			keyPlay(tom);
+			animation("tom");
 			break;
 		case 76:
 			let tink = document.getElementById("tink_audio");
-			playAudio(tink);
-			color("tink");
+			keyPlay(tink);
+			animation("tink");
 			break;
 	}
 });
 
-function color(test) {
-	let inst = document.getElementById(test);
-	inst.classList.add("playing");
+function animation(inst) {
+	let colorChange = document.getElementById(inst);
+	colorChange.classList.add("playing");
 };
 
-function playAudio(clip) { 
+function keyPlay(clip) { 
 			clip.currentTime = 0;
 			clip.play(); 
 		};
 		
 function clickPlay(clip) {
+	clip.currentTime = 0;
 	document.getElementById(clip).play();
 }
 

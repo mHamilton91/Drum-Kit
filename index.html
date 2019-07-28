@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel = "stylesheet" type = "text/css" href = "dk_style.css" />
-	<audio id="clap_audio">
-		<source src="sounds/clap.wav">
-	</audio>
-	<audio id="hihat_audio">
-		<source src="sounds/hihat.wav">
-	</audio>
-	<audio id="kick_audio">
-		<source src="sounds/kick.wav">
-	</audio>
-	<audio id="openhat_audio">
-		<source src="sounds/openhat.wav">
-	</audio>
-	<audio id="boom_audio">
-		<source src="sounds/boom.wav">
-	</audio>
-	<audio id="ride_audio">
-		<source src="sounds/ride.wav">
-	</audio>
-	<audio id="snare_audio">
-		<source src="sounds/snare.wav">
-	</audio>
-	<audio id="tom_audio">
-		<source src="sounds/tom.wav">
-	</audio>
-	<audio id="tink_audio">
-		<source src="sounds/tink.wav">
-	</audio>
-</head>
-<body>
-
-	<div id = "drum_row">
-		<div class="drum_button" id="clap" onclick="clickPlay('clap_audio')"><h2>A</h2><p>CLAP</p></div>
-		<div class="drum_button" id="hihat" onclick="clickPlay('hihat_audio')"><h2>S</h2><p>HIHAT</p></div>
-		<div class="drum_button" id="kick" onclick="clickPlay('kick_audio')"><h2>D</h2><p>KICK</p></div>
-		<div class="drum_button" id="openhat" onclick="clickPlay('openhat_audio')"><h2>F</h2><p>OPEN HAT</p></div>
-		<div class="drum_button" id="boom" onclick="clickPlay('boom_audio')"><h2>G</h2><p>BOOM</p></div>
-		<div class="drum_button" id="ride" onclick="clickPlay('ride_audio')"><h2>H</h2><p>RIDE</p></div>
-		<div class="drum_button" id="snare" onclick="clickPlay('snare_audio')"><h2>J</h2><p>SNARE</p></div>
-		<div class="drum_button" id="tom" onclick="clickPlay('tom_audio')"><h2>K</h2><p>TOM</p></div>
-		<div class="drum_button" id="tink" onclick="clickPlay('tink_audio')"><h2>L</h2><p>TINK</p></div>
-	</div>
-</body>
-<footer>
-	 <script src="dk_java.js"></script> 
-</footer>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "dk_style.css" />
+		<audio id="clap_audio" src="sounds/clap.wav"></audio>
+		<audio id="hihat_audio" src="sounds/hihat.wav"></audio>
+		<audio id="kick_audio"src="sounds/kick.wav"></audio>
+		<audio id="openhat_audio" src="sounds/openhat.wav"></audio>
+		<audio id="boom_audio" src="sounds/boom.wav"></audio>
+		<audio id="ride_audio" src="sounds/ride.wav"></audio>
+		<audio id="snare_audio" src="sounds/snare.wav"></audio>
+		<audio id="tom_audio" src="sounds/tom.wav"></audio>
+		<audio id="tink_audio" src="sounds/tink.wav"></audio>
+	</head>
+	<body>
+		<div id = "drum_row">
+			<div class="drum_button" id="clap" onclick="clickPlay('clap_audio')"><h2>A</h2><p>CLAP</p></div>
+			<div class="drum_button" id="hihat" onclick="clickPlay('hihat_audio')"><h2>S</h2><p>HIHAT</p></div>
+			<div class="drum_button" id="kick" onclick="clickPlay('kick_audio')"><h2>D</h2><p>KICK</p></div>
+			<div class="drum_button" id="openhat" onclick="clickPlay('openhat_audio')"><h2>F</h2><p>OPEN HAT</p></div>
+			<div class="drum_button" id="boom" onclick="clickPlay('boom_audio')"><h2>G</h2><p>BOOM</p></div>
+			<div class="drum_button" id="ride" onclick="clickPlay('ride_audio')"><h2>H</h2><p>RIDE</p></div>
+			<div class="drum_button" id="snare" onclick="clickPlay('snare_audio')"><h2>J</h2><p>SNARE</p></div>
+			<div class="drum_button" id="tom" onclick="clickPlay('tom_audio')"><h2>K</h2><p>TOM</p></div>
+			<div class="drum_button" id="tink" onclick="clickPlay('tink_audio')"><h2>L</h2><p>TINK</p></div>
+		</div>
+	</body>
+	<footer>
+		 <script src="dk_java.js"></script> 
+	</footer>
 </html>
